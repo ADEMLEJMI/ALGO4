@@ -1,0 +1,29 @@
+FUNCTION  palandromm(STR:string,i) : BOOLEAN
+VAR
+    j:=integer
+
+BEGIN
+    j=str.length-i-1
+    IF (STR[i]<>STR[j]) THEN
+        return false
+    END_IF
+
+    ELSE_IF (STR[i]==STR[j])THEN
+    palandromm[STR;i+1]
+    END_IF
+    else IF (i==j) THEN
+        return true
+    END_IF
+        
+END
+
+
+ALGORITHM chekpoint
+VAR
+str:STRING
+    i:=integer=0
+
+BEGIN
+Read(str)
+Write(palandromm(str,i))
+END
